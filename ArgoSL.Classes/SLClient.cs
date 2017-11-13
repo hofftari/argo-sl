@@ -17,55 +17,7 @@ namespace ArgoSL.Classes
         {
             ApiClient = apiClient;
         }
-        public string GetAllCampaignTemplates()
-        {
-            return GetReadResponseString("templates");
-        }
-        public string GetList(string listId)
-        {
-            return GetReadResponseString(string.Format("lists/{0}", listId));
-        }
-        public string GetListMembers(string listId)
-        {
-            return GetReadResponseString(string.Format("lists/{0}/members", listId));
-        }
-        public string GetCampaign(string campaignId)
-        {
-            return GetReadResponseString("campaigns/" + campaignId);
-        }
-        public string GetAllCampaigns()
-        {
-            return GetReadResponseString("campaigns");
-        }
-        public string GetAllLists()
-        {
-            return GetReadResponseString("lists");
-        }
-        public string EditCampaign(string campaignId, string campaignObject)
-        {
-            return GetPatchResponseString("campaigns/" + campaignId, campaignObject);
-        }
-        public string SearchForMember(string query)
-        {
-            return GetReadResponseString("search-members?query=" + query);
-        }
-        public string CreateList(string list)
-        {
-            return GetPostResponseString("lists", list);
-        }
-        public string UpsertListMembers(string listId, string memberObject)
-        {
-            return GetPostResponseString(string.Format("lists/{0}", listId), memberObject);
-        }
-        public string SetListMemberStatus(string listId, string memberId, string memberObject)
-        {
-            return GetPutResponseString(string.Format("lists/{0}/members/{1}", listId, memberId), memberObject);
-        }
-        public string RemoveListMember(string listId, string memberId)
-        {
-            return GetDeleteResponseString(string.Format("lists/{0}/members/{1}", listId, memberId));
-        }
-        public string CreateCampaign()
+        public string GetRealTimeInfoForStation(string station)
         {
             throw new NotImplementedException();
         }
@@ -134,5 +86,6 @@ namespace ArgoSL.Classes
 
             return responseContent;
         }
+
     }
 }
