@@ -8,7 +8,7 @@ using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ChessIT.Pivotal.Marketing.Server
+namespace ArgoSL.Classes
 {
     public class SLClient : ISLClient
     {
