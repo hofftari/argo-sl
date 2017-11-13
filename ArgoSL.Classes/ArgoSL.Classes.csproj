@@ -5,7 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Remove="RealTimeInfo.cs" />
+    <Compile Remove="RootObject.cs" />
   </ItemGroup>
 
   <ItemGroup>
