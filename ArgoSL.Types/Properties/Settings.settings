@@ -1,0 +1,18 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="ArgoSL.Types.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="StationInfoApiKey" Type="System.String" Scope="User">
+      <Value Profile="(Default)">cf33bf9048e24dde87574a80c6dce6a0</Value>
+    </Setting>
+    <Setting Name="RealTimeApiKey" Type="System.String" Scope="User">
+      <Value Profile="(Default)">277124c377f64fb49754856186782460</Value>
+    </Setting>
+    <Setting Name="TimeWindow" Type="System.Int32" Scope="User">
+      <Value Profile="(Default)">20</Value>
+    </Setting>
+    <Setting Name="ApiRootUrl" Type="System.String" Scope="User">
+      <Value Profile="(Default)">http://api.sl.se/api2</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

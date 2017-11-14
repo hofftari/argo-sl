@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
@@ -6,9 +7,9 @@ namespace ArgoSL.Types
 {
     public class JsonStringToObjectConverter
     {
-        public RealTimeInfo ConvertRealTimeStringToObject(string realTimeInfo)
+        public static RealTimeInfo ConvertRealTimeStringToObject(string realTimeInfo)
         {
-            throw new NotImplementedException();
+            return JsonConvert.DeserializeObject<RealTimeInfo>(realTimeInfo);
         }
     }
 }

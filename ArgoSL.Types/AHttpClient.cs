@@ -9,7 +9,7 @@ using ArgoSL.Types.Interfaces;
 
 namespace ArgoSL.Types
 {
-    public class XHttpClient : IHttpClient
+    public class AHttpClient : IHttpClient
     {
         private static HttpClient _ApiClient;
         public HttpClient ApiClient
@@ -28,19 +28,19 @@ namespace ArgoSL.Types
             }
         }
         public Uri ApiRoot { get; set; }
-        public XHttpClient(string apiRoot)
+        public AHttpClient()
         {
-            ApiRoot = new Uri(apiRoot);
+            
         }
-        public XHttpClient(string user, string apiRoot, string apiKey)
+        //public AHttpClient(string user, string apiRoot, string apiKey)
+        //{
+        //    ApiRoot = new Uri(apiRoot);
+        //    var byteArray = Encoding.ASCII.GetBytes(user + ":" + apiKey);
+        //    ApiClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Basic", Convert.ToBase64String(byteArray));
+        //}
+        public Task<HttpResponseMessage> GetAsync(string requestUri)
         {
-            ApiRoot = new Uri(apiRoot);
-            var byteArray = Encoding.ASCII.GetBytes(user + ":" + apiKey);
-            ApiClient.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Basic", Convert.ToBase64String(byteArray));
-        }
-        public Task<HttpResponseMessage> GetAsync(string relativeRequestUri)
-        {
-            return ApiClient.GetAsync(new Uri(ApiRoot, relativeRequestUri));
+            return ApiClient.GetAsync(new Uri(requestUri));
         }
         public Task<HttpResponseMessage> PostAsync(string relativeRequestUri, string content)
         {
