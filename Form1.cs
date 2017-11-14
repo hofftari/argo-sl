@@ -69,5 +69,32 @@ namespace ArgoSL
             }
             
         }
+
+        private void textBox2_KeyUp(object sender, KeyEventArgs e)
+        {
+            if (e.KeyData == Keys.Enter)
+            {
+                this.StationSearch();
+            }
+        }
+
+        private void button2_MouseClick(object sender, MouseEventArgs e)
+        {
+            this.StationSearch();
+        }
+        private void StationSearch()
+        {
+            string searchString = textBox2.Text;
+            AHttpClient apiClient = new AHttpClient();
+            ASLClient client = new ASLClient(apiClient);
+
+            StationInfo info = client.GetSearchResultsForStation(searchString);
+            listBox1.Items.Clear();
+
+            foreach (Responsedata station in info.ResponseData.ToList())
+            {
+                this.listBox1.Items.Add(station.Name + " - " + station.SiteId + "\r\n");
+            }
+        }
     }
 }

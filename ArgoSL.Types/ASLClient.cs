@@ -17,7 +17,7 @@ namespace ArgoSL.Types
         {
             ApiClient = apiClient;
             realTimeInfoApiKey = Properties.Settings.Default.RealTimeApiKey;
-            stationInfoApiKey = Properties.Settings.Default.RealTimeApiKey;
+            stationInfoApiKey = Properties.Settings.Default.StationInfoApiKey;
             apiRootUrl = Properties.Settings.Default.ApiRootUrl;
             timeWindow = Properties.Settings.Default.TimeWindow;
         }
@@ -32,6 +32,10 @@ namespace ArgoSL.Types
         public string SearchForStation(string searchString)
         {
             return GetReadResponseString(string.Format("{0}/typeahead.json?key={1}&searchstring={2}&stationsonly=true&maxresults=10", apiRootUrl, stationInfoApiKey, searchString));
+        }
+        public StationInfo GetSearchResultsForStation(string searchString)
+        {
+            return JsonConvert.DeserializeObject<StationInfo>(SearchForStation(searchString));
         }
         private string GetReadResponseString(string path)
         {

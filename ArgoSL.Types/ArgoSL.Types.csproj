@@ -55,6 +55,7 @@
     <Compile Include="RealTimeInfo.cs" />
     <Compile Include="ASLClient.cs" />
     <Compile Include="AHttpClient.cs" />
+    <Compile Include="StationInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />

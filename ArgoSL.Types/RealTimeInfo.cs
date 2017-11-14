@@ -37,6 +37,7 @@ namespace ArgoSL.Types
         public int JourneyNumber { get; set; }
         public Deviation[] Deviations { get; set; }
     }
+
     public class Metro : Transport
     {
 
