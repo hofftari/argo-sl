@@ -5,8 +5,6 @@ VisualStudioVersion = 15.0.26430.13
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArgoSL.Form", "ArgoSL.Form.csproj", "{7AD6FB0E-625F-47A3-AFAB-B37908317FE5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArgoSL.Typess", "..\ClassLibrary1\ArgoSL.Typess.csproj", "{E0008689-8F4D-414F-8E87-FD49A661DCD7}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArgoSL.Types", "ArgoSL.Types\ArgoSL.Types.csproj", "{7F66B4A2-8D59-4697-89EE-1A99807C44FF}"
 EndProject
 Global
@@ -19,10 +17,6 @@ Global
 		{7AD6FB0E-625F-47A3-AFAB-B37908317FE5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7AD6FB0E-625F-47A3-AFAB-B37908317FE5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7AD6FB0E-625F-47A3-AFAB-B37908317FE5}.Release|Any CPU.Build.0 = Release|Any CPU
-		{E0008689-8F4D-414F-8E87-FD49A661DCD7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{E0008689-8F4D-414F-8E87-FD49A661DCD7}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{E0008689-8F4D-414F-8E87-FD49A661DCD7}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{E0008689-8F4D-414F-8E87-FD49A661DCD7}.Release|Any CPU.Build.0 = Release|Any CPU
 		{7F66B4A2-8D59-4697-89EE-1A99807C44FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{7F66B4A2-8D59-4697-89EE-1A99807C44FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7F66B4A2-8D59-4697-89EE-1A99807C44FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
