@@ -25,17 +25,17 @@ namespace ArgoSL.Types
         {
             return JsonConvert.DeserializeObject<RealTimeInfo>(GetRealTimeInfoStringForStation(stationId));
         }
-        public string GetRealTimeInfoStringForStation(string stationId)
+        private string GetRealTimeInfoStringForStation(string stationId)
         {
             return GetReadResponseString(string.Format("{0}/realtimedeparturesV4.json?key={1}&siteid={2}&timewindow={3}", apiRootUrl, realTimeInfoApiKey, stationId, timeWindow));
         }
-        public string SearchForStation(string searchString)
+        private string GetSearchResultStringForStation(string searchString)
         {
             return GetReadResponseString(string.Format("{0}/typeahead.json?key={1}&searchstring={2}&stationsonly=true&maxresults=10", apiRootUrl, stationInfoApiKey, searchString));
         }
-        public StationInfo GetSearchResultsForStation(string searchString)
+        public StationInfo SearchForStation(string searchString)
         {
-            return JsonConvert.DeserializeObject<StationInfo>(SearchForStation(searchString));
+            return JsonConvert.DeserializeObject<StationInfo>(GetSearchResultStringForStation(searchString));
         }
         private string GetReadResponseString(string path)
         {

@@ -9,6 +9,6 @@ namespace ArgoSL.Types.Interfaces
     public interface ISLClient
     {
         RealTimeInfo GetRealTimeInfoForStation(string stationId);
-        string SearchForStation(string searchString);
+        StationInfo SearchForStation(string searchString);
     }
 }

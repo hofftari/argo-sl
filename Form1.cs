@@ -29,8 +29,6 @@ namespace ArgoSL
             
             RealTimeInfo info = client.GetRealTimeInfoForStation(siteId);
             PopulateLabels(info);
-
-            string station = client.SearchForStation("solna");
         }
         private void PopulateLabels(RealTimeInfo info)
         {
@@ -88,7 +86,7 @@ namespace ArgoSL
             AHttpClient apiClient = new AHttpClient();
             ASLClient client = new ASLClient(apiClient);
 
-            StationInfo info = client.GetSearchResultsForStation(searchString);
+            StationInfo info = client.SearchForStation(searchString);
             listBox1.Items.Clear();
 
             foreach (Responsedata station in info.ResponseData.ToList())
