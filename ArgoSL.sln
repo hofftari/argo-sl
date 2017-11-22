@@ -1,11 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26430.13
+VisualStudioVersion = 15.0.27004.2008
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArgoSL.Form", "ArgoSL.Form.csproj", "{7AD6FB0E-625F-47A3-AFAB-B37908317FE5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArgoSL.Types", "ArgoSL.Types\ArgoSL.Types.csproj", "{7F66B4A2-8D59-4697-89EE-1A99807C44FF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArgoSL.Core", "ArgoSL.Types\ArgoSL.Core.csproj", "{7F66B4A2-8D59-4697-89EE-1A99807C44FF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -24,5 +24,8 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2894CF9A-C731-4510-89CF-82E3251F257B}
 	EndGlobalSection
 EndGlobal

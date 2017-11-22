@@ -83,9 +83,9 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="ArgoSL.Types\ArgoSL.Types.csproj">
+    <ProjectReference Include="ArgoSL.Types\ArgoSL.Core.csproj">
       <Project>{7f66b4a2-8d59-4697-89ee-1a99807c44ff}</Project>
-      <Name>ArgoSL.Types</Name>
+      <Name>ArgoSL.Core</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
