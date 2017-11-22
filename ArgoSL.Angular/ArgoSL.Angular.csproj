@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard1.4</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="argo-sl\node_modules\**" />
+    <EmbeddedResource Remove="argo-sl\node_modules\**" />
+    <None Remove="argo-sl\node_modules\**" />
+  </ItemGroup>
+
+</Project>
