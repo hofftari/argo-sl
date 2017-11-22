@@ -58,6 +58,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+      <SubType>Designer</SubType>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -83,8 +84,8 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="ArgoSL.Types\ArgoSL.Core.csproj">
-      <Project>{7f66b4a2-8d59-4697-89ee-1a99807c44ff}</Project>
+    <ProjectReference Include="ArgoSL.Core\ArgoSL.Core.csproj">
+      <Project>{69C446D9-5E9B-4D76-AFF4-126203543E32}</Project>
       <Name>ArgoSL.Core</Name>
     </ProjectReference>
   </ItemGroup>

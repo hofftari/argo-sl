@@ -5,9 +5,9 @@ VisualStudioVersion = 15.0.27004.2008
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArgoSL.Form", "ArgoSL.Form.csproj", "{7AD6FB0E-625F-47A3-AFAB-B37908317FE5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArgoSL.Core", "ArgoSL.Types\ArgoSL.Core.csproj", "{7F66B4A2-8D59-4697-89EE-1A99807C44FF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ArgoSL.Angular", "ArgoSL.Angular\ArgoSL.Angular.csproj", "{9F4CBD8A-E458-434A-85F4-812E92DCC9E2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArgoSL.Angular", "ArgoSL.Angular\ArgoSL.Angular.csproj", "{9F4CBD8A-E458-434A-85F4-812E92DCC9E2}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArgoSL.Core", "ArgoSL.Core\ArgoSL.Core.csproj", "{69C446D9-5E9B-4D76-AFF4-126203543E32}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -19,19 +19,19 @@ Global
 		{7AD6FB0E-625F-47A3-AFAB-B37908317FE5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7AD6FB0E-625F-47A3-AFAB-B37908317FE5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7AD6FB0E-625F-47A3-AFAB-B37908317FE5}.Release|Any CPU.Build.0 = Release|Any CPU
-		{7F66B4A2-8D59-4697-89EE-1A99807C44FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{7F66B4A2-8D59-4697-89EE-1A99807C44FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{7F66B4A2-8D59-4697-89EE-1A99807C44FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{7F66B4A2-8D59-4697-89EE-1A99807C44FF}.Release|Any CPU.Build.0 = Release|Any CPU
 		{9F4CBD8A-E458-434A-85F4-812E92DCC9E2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{9F4CBD8A-E458-434A-85F4-812E92DCC9E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9F4CBD8A-E458-434A-85F4-812E92DCC9E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9F4CBD8A-E458-434A-85F4-812E92DCC9E2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{69C446D9-5E9B-4D76-AFF4-126203543E32}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{69C446D9-5E9B-4D76-AFF4-126203543E32}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{69C446D9-5E9B-4D76-AFF4-126203543E32}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{69C446D9-5E9B-4D76-AFF4-126203543E32}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {2894CF9A-C731-4510-89CF-82E3251F257B}
+		SolutionGuid = {1DC6DEB9-6ECF-4919-B8E5-7C7C87C7781A}
 	EndGlobalSection
 EndGlobal

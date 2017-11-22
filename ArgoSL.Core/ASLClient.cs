@@ -1,13 +1,13 @@
-﻿using ArgoSL.Types.Interfaces;
+﻿using ArgoSL.Core.Interfaces;
 using System.Net.Http;
 using System;
 using Newtonsoft.Json;
 
-namespace ArgoSL.Types
+namespace ArgoSL.Core
 {
     public class ASLClient : ISLClient
     {
-        private static string format = "json";
+        //private static string format = "json";
         private string realTimeInfoApiKey;
         private string stationInfoApiKey;
         private string apiRootUrl;

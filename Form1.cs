@@ -1,4 +1,4 @@
-﻿using ArgoSL.Types;
+﻿using ArgoSL.Core;
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;

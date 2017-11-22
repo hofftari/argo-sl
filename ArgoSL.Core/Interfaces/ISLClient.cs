@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ArgoSL.Types.Interfaces
+namespace ArgoSL.Core.Interfaces
 {
     public interface ISLClient
     {

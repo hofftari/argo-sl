@@ -3,7 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 
-namespace ArgoSL.Types
+namespace ArgoSL.Core
 {
     public class JsonStringToObjectConverter
     {

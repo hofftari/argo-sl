@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace ArgoSL.Types
+namespace ArgoSL.Core
 {
     public class RealTimeInfo
     {

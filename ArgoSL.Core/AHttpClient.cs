@@ -5,9 +5,9 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Net.Http;
 using System.Net.Http.Headers;
-using ArgoSL.Types.Interfaces;
+using ArgoSL.Core.Interfaces;
 
-namespace ArgoSL.Types
+namespace ArgoSL.Core
 {
     public class AHttpClient : IHttpClient
     {
