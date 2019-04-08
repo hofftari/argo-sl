@@ -24,8 +24,8 @@ namespace ArgoSL
             //string siteId = "9509";
             string siteId = this.textBox1.Text;
 
-            AHttpClient apiClient = new AHttpClient();
-            ASLClient client = new ASLClient(apiClient);
+            HttpBaseClient apiClient = new HttpBaseClient();
+            SLClient client = new SLClient(apiClient);
             
             RealTimeInfo info = client.GetRealTimeInfoForStation(siteId);
             PopulateLabels(info);
@@ -83,8 +83,8 @@ namespace ArgoSL
         private void StationSearch()
         {
             string searchString = textBox2.Text;
-            AHttpClient apiClient = new AHttpClient();
-            ASLClient client = new ASLClient(apiClient);
+            HttpBaseClient apiClient = new HttpBaseClient();
+            SLClient client = new SLClient(apiClient);
 
             StationInfo info = client.SearchForStation(searchString);
             listBox1.Items.Clear();
