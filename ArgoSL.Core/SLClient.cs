@@ -5,7 +5,7 @@ using Newtonsoft.Json;
 
 namespace ArgoSL.Core
 {
-    public class ASLClient : ISLClient
+    public class SLClient : ISLClient
     {
         //private static string format = "json";
         private string realTimeInfoApiKey;
@@ -13,7 +13,7 @@ namespace ArgoSL.Core
         private string apiRootUrl;
         private int timeWindow;
         public IHttpClient ApiClient { get; }
-        public ASLClient(IHttpClient apiClient)
+        public SLClient(IHttpClient apiClient)
         {
             ApiClient = apiClient;
             realTimeInfoApiKey = Properties.Settings.Default.RealTimeApiKey;

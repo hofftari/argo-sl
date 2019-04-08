@@ -8,7 +8,6 @@ EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ArgoSL.Angular", "ArgoSL.Angular\ArgoSL.Angular.csproj", "{9F4CBD8A-E458-434A-85F4-812E92DCC9E2}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArgoSL.Core", "ArgoSL.Core\ArgoSL.Core.csproj", "{69C446D9-5E9B-4D76-AFF4-126203543E32}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -19,10 +18,6 @@ Global
 		{7AD6FB0E-625F-47A3-AFAB-B37908317FE5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7AD6FB0E-625F-47A3-AFAB-B37908317FE5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7AD6FB0E-625F-47A3-AFAB-B37908317FE5}.Release|Any CPU.Build.0 = Release|Any CPU
-		{9F4CBD8A-E458-434A-85F4-812E92DCC9E2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{9F4CBD8A-E458-434A-85F4-812E92DCC9E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{9F4CBD8A-E458-434A-85F4-812E92DCC9E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{9F4CBD8A-E458-434A-85F4-812E92DCC9E2}.Release|Any CPU.Build.0 = Release|Any CPU
 		{69C446D9-5E9B-4D76-AFF4-126203543E32}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{69C446D9-5E9B-4D76-AFF4-126203543E32}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{69C446D9-5E9B-4D76-AFF4-126203543E32}.Release|Any CPU.ActiveCfg = Release|Any CPU

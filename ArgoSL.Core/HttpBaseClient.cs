@@ -1,15 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using ArgoSL.Core.Interfaces;
+using System;
 using System.Net.Http;
-using System.Net.Http.Headers;
-using ArgoSL.Core.Interfaces;
+using System.Threading.Tasks;
 
 namespace ArgoSL.Core
 {
-    public class AHttpClient : IHttpClient
+    public class HttpBaseClient : IHttpClient
     {
         private static HttpClient _ApiClient;
         public HttpClient ApiClient
@@ -28,9 +24,9 @@ namespace ArgoSL.Core
             }
         }
         public Uri ApiRoot { get; set; }
-        public AHttpClient()
+        public HttpBaseClient()
         {
-            
+
         }
         //public AHttpClient(string user, string apiRoot, string apiKey)
         //{

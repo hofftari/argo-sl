@@ -53,8 +53,8 @@
       <DependentUpon>Settings.settings</DependentUpon>
     </Compile>
     <Compile Include="RealTimeInfo.cs" />
-    <Compile Include="ASLClient.cs" />
-    <Compile Include="AHttpClient.cs" />
+    <Compile Include="SLClient.cs" />
+    <Compile Include="HttpBaseClient.cs" />
     <Compile Include="StationInfo.cs" />
   </ItemGroup>
   <ItemGroup>
